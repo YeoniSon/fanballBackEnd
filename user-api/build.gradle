@@ -21,12 +21,21 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-mail'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation project(':common')
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compileOnly 'org.projectlombok:lombok'
     testImplementation 'com.h2database:h2'
     implementation 'mysql:mysql-connector-java'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation 'org.springframework.data:spring-data-envers'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
 }
 
 tasks.named('test') {
