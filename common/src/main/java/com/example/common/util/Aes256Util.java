@@ -8,15 +8,16 @@ import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 
 public class Aes256Util {
-    public static String alg = "AES/ECB/PKCS5Padding";
-    private static final String KEY = "FANBALLKEYISFANBALLKEY";
-    private static final String IV = KEY.substring(0, 16);
+    public static String alg = "AES/CBC/PKCS5Padding";
+    private static final String KEY = "FANBALLKEYISFANBALLKEY"; // source key string
+    private static final byte[] KEY_BYTES = java.util.Arrays.copyOf(KEY.getBytes(StandardCharsets.UTF_8), 16);
+    private static final byte[] IV_BYTES = java.util.Arrays.copyOf(KEY.getBytes(StandardCharsets.UTF_8), 16);
 
     public static String encrypt(String text) {
         try{
             Cipher cipher = Cipher.getInstance(alg);
-            SecretKeySpec keySpec = new SecretKeySpec(KEY.getBytes(), "AES");
-            IvParameterSpec ivParameterSpec = new IvParameterSpec(IV.getBytes());
+            SecretKeySpec keySpec = new SecretKeySpec(KEY_BYTES, "AES");
+            IvParameterSpec ivParameterSpec = new IvParameterSpec(IV_BYTES);
             cipher.init(Cipher.ENCRYPT_MODE, keySpec, ivParameterSpec);
 
             byte[] encrypted = cipher.doFinal(text.getBytes(StandardCharsets.UTF_8));
@@ -29,8 +30,8 @@ public class Aes256Util {
     public static String decrypt(String cipherText) {
         try{
             Cipher cipher = Cipher.getInstance(alg);
-            SecretKeySpec keySpec = new SecretKeySpec(KEY.getBytes(),"AES");
-            IvParameterSpec ivParameterSpec = new IvParameterSpec(IV.getBytes(StandardCharsets.UTF_8));
+            SecretKeySpec keySpec = new SecretKeySpec(KEY_BYTES, "AES");
+            IvParameterSpec ivParameterSpec = new IvParameterSpec(IV_BYTES);
             cipher.init(Cipher.DECRYPT_MODE, keySpec, ivParameterSpec);
 
             byte[] decodedBytes = Base64.decodeBase64(cipherText);
