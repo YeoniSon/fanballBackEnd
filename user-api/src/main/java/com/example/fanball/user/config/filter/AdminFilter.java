@@ -5,25 +5,20 @@ import com.example.common.domain.UserType;
 import com.example.fanball.user.sevice.user.UserService;
 import lombok.RequiredArgsConstructor;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebFilter(urlPatterns = "/admin/*")
 @RequiredArgsConstructor
-public class UserFilter implements Filter {
-
+public class AdminFilter implements Filter {
     private final JwtTokenProvider jwtTokenProvider;
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
+        throws IOException, ServletException {
         HttpServletRequest httpReq = (HttpServletRequest) request;
         HttpServletResponse httpRes = (HttpServletResponse) response;
 

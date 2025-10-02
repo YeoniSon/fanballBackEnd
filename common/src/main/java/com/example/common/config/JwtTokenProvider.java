@@ -33,6 +33,7 @@ public class JwtTokenProvider {
 
     }
 
+    //만료시간 체크
     public boolean validateToken(String jwtToken) {
         try {
             Jws<Claims> claimsJws = Jwts.parser()
@@ -45,6 +46,7 @@ public class JwtTokenProvider {
         }
     }
 
+    // 토큰에서 id, email를 복호화 => UserVo(id, email)
     public UserVo getUserVo(String token) {
         Claims c = Jwts.parser()
                 .setSigningKey(sercretKey)
@@ -56,6 +58,7 @@ public class JwtTokenProvider {
         ), Aes256Util.decrypt(c.getSubject()));
     }
 
+    // 토큰에서 role을 UserType으로 반환
     public UserType getRole(String token) {
         Claims c = Jwts.parser()
                 .setSigningKey(sercretKey)
