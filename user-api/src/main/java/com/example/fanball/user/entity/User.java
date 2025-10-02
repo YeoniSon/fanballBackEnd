@@ -47,6 +47,10 @@ public class User extends BaseEntity {
     private String verificationCode;
     private boolean verified;
 
+    // Password reset (pre-login): 6-digit code + expiry
+    private String resetCode;
+    private LocalDateTime resetCodeExpireAt;
+
     public static User from(SignupForm form) {
         return User.builder()
                 .email(form.getEmail().toLowerCase(Locale.ROOT))

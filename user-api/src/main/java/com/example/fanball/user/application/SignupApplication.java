@@ -14,19 +14,24 @@ import static com.example.fanball.user.exception.ErrorCode.ALREADY_REGISTER_USER
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 @Service
 @RequiredArgsConstructor
 public class SignupApplication {
     private final UserSignupService userSignupService;
     private final MailComponent mailComponent;
+    private final TemplateEngine templateEngine;
 
     public void userVerify(String email, String code) {
         userSignupService.verifyEmail(email, code);
     }
 
-    public NicknameCheckResponseDto isExistNickname(NicknameCheckRequsetDto requsetDto) {
-        boolean exists = userSignupService.isNicknameExist(requsetDto.getNickname());
+    public NicknameCheckResponseDto isExistNickname(NicknameCheckRequsetDto requestDto) {
+        boolean exists = userSignupService.isNicknameExist(requestDto.getNickname());
 
         return  new NicknameCheckResponseDto(exists);
     }
@@ -46,7 +51,17 @@ public class SignupApplication {
 
             String code = getRandomCode();
 
-            mailComponent.sendMail(user.getEmail(), subject, getMailBody(user.getEmail(), code));
+            // build verification link and render template
+            String verifyLink = "http://localhost:8081/signup/verify?email="
+                    + URLEncoder.encode(user.getEmail(), StandardCharsets.UTF_8)
+                    + "&code=" + code;
+            Context ctx = new Context();
+            ctx.setVariable("name", user.getName());
+            ctx.setVariable("verifyLink", verifyLink);
+            ctx.setVariable("expireMinutes", 10);
+            String html = templateEngine.process("SignupVerifyMail", ctx);
+
+            mailComponent.sendMail(user.getEmail(), subject, html);
 
             userSignupService.changeUserValidateEmail(user.getId(), code);
             return "회원 가입에 성공하였습니다.";
@@ -57,16 +72,5 @@ public class SignupApplication {
         return RandomStringUtils.random(10, true, true);
     }
 
-    private String getMailBody(String email, String code) {
-        StringBuilder sb = new StringBuilder();
-        return sb.append("안녕하세요. FanBall 입니다.\n\n")
-                .append("아래 링크를 클릭하여 이메일 인증을 완료해 주세요.\n\n")
-                .append("http://localhost:8081/signup/verify?email=")
-                .append(email)
-                .append("&code=")
-                .append(code)
-                .append("\n\n감사합니다.")
-                .toString();
-    }
 
 }
