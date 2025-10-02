@@ -1,6 +1,7 @@
 package com.example.fanball.user.config;
 
 import com.example.common.config.JwtTokenProvider;
+import com.example.fanball.user.config.filter.AdminFilter;
 import com.example.fanball.user.config.filter.UserFilter;
 import com.example.fanball.user.sevice.user.UserService;
 import org.springframework.context.annotation.Bean;
@@ -25,6 +26,7 @@ public class SecurityConfig {
                 .antMatchers(
                         "/signup/**",
                         "/login/**",
+                        "/user/**",
                         "/v3/api-docs/**",
                         "/swagger-ui/**",
                         "/swagger-ui.html",
@@ -36,7 +38,8 @@ public class SecurityConfig {
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
             .and()
-            .addFilterBefore(new UserFilter(jwtTokenProvider, userService), UsernamePasswordAuthenticationFilter.class);
+            .addFilterBefore(new UserFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class)
+            .addFilterBefore(new AdminFilter(jwtTokenProvider), UserFilter.class);
 
         return http.build();
     }
