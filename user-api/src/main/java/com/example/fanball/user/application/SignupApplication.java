@@ -1,15 +1,12 @@
 package com.example.fanball.user.application;
 
 import com.example.fanball.user.domain.SignupForm;
+import com.example.fanball.user.dto.user.request.NicknameCheckRequsetDto;
+import com.example.fanball.user.dto.user.response.NicknameCheckResponseDto;
 import com.example.fanball.user.entity.User;
-import com.example.fanball.user.exception.ErrorCode;
 import com.example.fanball.user.exception.UserException;
 import com.example.fanball.user.mail.MailComponent;
-import com.example.fanball.user.mail.SendMailForm;
-import com.example.fanball.user.sevice.user.SignupUserService;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.example.fanball.user.sevice.user.UserSignupService;
 
 import static com.example.fanball.user.exception.ErrorCode.ALREADY_EXIST_NICKNAME;
 import static com.example.fanball.user.exception.ErrorCode.ALREADY_REGISTER_USER;
@@ -21,40 +18,37 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class SignupApplication {
-    private final SignupUserService signupUserService;
+    private final UserSignupService userSignupService;
     private final MailComponent mailComponent;
 
     public void userVerify(String email, String code) {
-        signupUserService.verifyEmail(email, code);
+        userSignupService.verifyEmail(email, code);
     }
 
-    public Map<String, Boolean> isExistNickname(String nickname) {
-        boolean exists = signupUserService.isNicknameExist(nickname);
+    public NicknameCheckResponseDto isExistNickname(NicknameCheckRequsetDto requsetDto) {
+        boolean exists = userSignupService.isNicknameExist(requsetDto.getNickname());
 
-        Map<String, Boolean> response = new HashMap<>();
-        response.put("exist", exists);
-
-        return response;
+        return  new NicknameCheckResponseDto(exists);
     }
 
     public String userSignUp(SignupForm form) {
 
         String subject = "FanBall 회원가입 인증 메일";
 
-        if (signupUserService.isEmailExist(form.getEmail())) {
+        if (userSignupService.isEmailExist(form.getEmail())) {
             //예외처리
             throw new UserException(ALREADY_REGISTER_USER);
-        }else if (signupUserService.isNicknameExist(form.getNickName())) {
+        }else if (userSignupService.isNicknameExist(form.getNickName())) {
             throw new UserException(ALREADY_EXIST_NICKNAME);
         }else {
             // 회원가입
-            User user = signupUserService.signUp(form);
+            User user = userSignupService.signUp(form);
 
             String code = getRandomCode();
 
             mailComponent.sendMail(user.getEmail(), subject, getMailBody(user.getEmail(), code));
 
-            signupUserService.changeUserValidateEmail(user.getId(), code);
+            userSignupService.changeUserValidateEmail(user.getId(), code);
             return "회원 가입에 성공하였습니다.";
         }
     }

@@ -2,10 +2,13 @@ package com.example.fanball.user.controller.user;
 
 import com.example.fanball.user.application.SignupApplication;
 import com.example.fanball.user.domain.SignupForm;
+import com.example.fanball.user.dto.user.request.NicknameCheckRequsetDto;
+import com.example.fanball.user.dto.user.response.NicknameCheckResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Map;
 
 @RestController
@@ -21,8 +24,9 @@ public class SignupController {
     }
 
     @GetMapping("/check-nickname")
-    public ResponseEntity<Map<String, Boolean>> checkNickname(@RequestParam String nickname) {
-        return ResponseEntity.ok(signupApplication.isExistNickname(nickname));
+    public ResponseEntity<NicknameCheckResponseDto> checkNickname
+            (@RequestBody @Valid NicknameCheckRequsetDto requsetDto) {
+        return ResponseEntity.ok(signupApplication.isExistNickname(requsetDto));
     }
 
     @GetMapping("/verify")
