@@ -4,7 +4,6 @@ import com.example.fanball.user.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 
@@ -22,6 +21,7 @@ public class UserDto {
 
     private Double reputation;
     private Double responseRate;
+    private Boolean blocked;
 
     public static UserDto from(User user) {
         return new UserDto(
@@ -33,6 +33,7 @@ public class UserDto {
                 user.getBirth(),
                 user.getRole(),
                 user.getReputation(),
-                user.getResponseRate());
+                user.getResponseRate(),
+                user.getBlocked());
     }
 }
