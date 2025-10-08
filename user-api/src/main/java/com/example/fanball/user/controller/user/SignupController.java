@@ -25,8 +25,8 @@ public class SignupController {
 
     @GetMapping("/check-nickname")
     public ResponseEntity<NicknameCheckResponseDto> checkNickname
-            (@RequestBody @Valid NicknameCheckRequsetDto requsetDto) {
-        return ResponseEntity.ok(signupApplication.isExistNickname(requsetDto));
+            (@RequestBody @Valid NicknameCheckRequsetDto req) {
+        return ResponseEntity.ok(signupApplication.isExistNickname(req));
     }
 
     @GetMapping("/verify")

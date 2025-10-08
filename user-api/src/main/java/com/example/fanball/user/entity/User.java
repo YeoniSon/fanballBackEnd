@@ -47,7 +47,7 @@ public class User extends BaseEntity {
     private String verificationCode;
     private boolean verified;
 
-    // Password reset (pre-login): 6-digit code + expiry
+    //비밀번호 찾기 인증 번호
     private String resetCode;
     private LocalDateTime resetCodeExpireAt;
 
