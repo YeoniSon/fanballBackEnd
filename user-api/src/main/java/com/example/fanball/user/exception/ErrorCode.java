@@ -16,7 +16,11 @@ public enum ErrorCode {
     // login
     LOGIN_CHECK_FAIL(HttpStatus.BAD_REQUEST, "아이디나 패스워드를 확인해 주세요."),
 
-    ALREADY_VERIFY(HttpStatus.BAD_REQUEST, "이미 인증이 완료되었습니다.");
+    ALREADY_VERIFY(HttpStatus.BAD_REQUEST, "이미 인증이 완료되었습니다."),
+
+    // common auth errors
+    INVALID_TOKEN(HttpStatus.UNAUTHORIZED, "토큰이 유효하지 않습니다."),
+    INVALID_TOKEN_PAYLOAD(HttpStatus.UNAUTHORIZED, "토큰 페이로드가 유효하지 않습니다.");
 
     private final HttpStatus httpStatus;
     private final String detail;
