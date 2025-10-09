@@ -4,7 +4,7 @@ import com.example.fanball.user.dto.user.request.PasswordRequest;
 import com.example.fanball.user.entity.User;
 import com.example.fanball.user.exception.UserException;
 import com.example.fanball.user.mail.MailComponent;
-import com.example.fanball.user.repository.user.UserRepository;
+import com.example.fanball.user.repository.UserRepository;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.RequiredArgsConstructor;
