@@ -38,8 +38,8 @@ public class User extends BaseEntity {
     private String role;
 
 
-    private Double reputation = 0.0;
-    private Double responseRate = 0.0;
+    private Double reputation;
+    private Double responseRate;
 
     private Boolean blocked;
 

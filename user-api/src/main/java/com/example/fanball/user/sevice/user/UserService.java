@@ -5,7 +5,7 @@ import com.example.fanball.user.dto.user.request.FindEmailRequest;
 import com.example.fanball.user.dto.user.request.UserRequestDto;
 import com.example.fanball.user.entity.User;
 import com.example.fanball.user.exception.UserException;
-import com.example.fanball.user.repository.user.UserRepository;
+import com.example.fanball.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

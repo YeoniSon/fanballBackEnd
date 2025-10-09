@@ -1,4 +1,4 @@
-package com.example.fanball.user.repository.user;
+package com.example.fanball.user.repository;
 
 import com.example.fanball.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
