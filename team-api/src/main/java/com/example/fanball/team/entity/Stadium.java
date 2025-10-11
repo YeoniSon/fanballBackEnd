@@ -1,20 +1,17 @@
 package com.example.fanball.team.entity;
 
 import com.example.common.base.BaseEntity;
-import com.example.fanball.team.domain.TeamForm;
 import lombok.*;
-import org.hibernate.envers.AuditOverride;
 
 import javax.persistence.*;
 
-@Entity(name = "STADIUM")
+@Entity(name = "stadium")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@AuditOverride(forClass = BaseEntity.class)
-public class Stadium extends BaseEntity {
+public class Stadium{
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,11 +20,4 @@ public class Stadium extends BaseEntity {
     private String name;
 
     private String location;
-
-    public static Stadium from(TeamForm form) {
-        return Stadium.builder()
-                .name(form.getStadium())
-                .location(form.getLocation())
-                .build();
-    }
 }

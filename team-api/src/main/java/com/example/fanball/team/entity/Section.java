@@ -1,11 +1,10 @@
 package com.example.fanball.team.entity;
 
-import com.example.fanball.team.domain.TeamForm;
 import lombok.*;
 
 import javax.persistence.*;
 
-@Entity(name = "SECTION")
+@Entity(name = "section")
 @Getter
 @Setter
 @Builder
@@ -21,14 +20,12 @@ public class Section {
     @JoinColumn(name = "stadium_id")
     private Stadium stadium;
 
+    @ManyToOne
+    @JoinColumn(name = "team_id")
+    private Team team;
+
     private String name;
+    private String category; // weekday, weekend, g1, g2 등
 
     private Integer price;
-
-    public static Section from(TeamForm form) {
-        return Section.builder()
-                .name(form.getSectionName())
-                .price(form.getPrice())
-                .build();
-    }
 }
