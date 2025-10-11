@@ -1,4 +1,4 @@
-package com.example.fanball.user.config;
+package com.example.fanball.config;
 
 import com.example.common.config.JwtTokenProvider;
 import com.example.fanball.user.config.filter.AdminFilter;
@@ -33,7 +33,8 @@ public class SecurityConfig {
                         "/swagger-resources/**",
                         "/webjars/**",
                         "/configuration/ui",
-                        "/configuration/security"
+                        "/configuration/security",
+                        "/api/**"
                 ).permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
