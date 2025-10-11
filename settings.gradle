@@ -1,4 +1,6 @@
 rootProject.name = 'fanball'
 include 'user-api'
 include 'common'
+include 'team-api'
+include 'main-api'
 

@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import java.util.Locale;
 
 
-@Entity(name = "USER")
+@Entity(name = "user")
 @Getter
 @Setter
 @Builder
@@ -38,8 +38,8 @@ public class User extends BaseEntity {
     private String role;
 
 
-    private Double reputation = 0.0;
-    private Double responseRate = 0.0;
+    private Double reputation;
+    private Double responseRate;
 
     private Boolean blocked;
 

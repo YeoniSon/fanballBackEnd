@@ -1,4 +1,4 @@
-package com.example.fanball.user.config;
+package com.example.fanball.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

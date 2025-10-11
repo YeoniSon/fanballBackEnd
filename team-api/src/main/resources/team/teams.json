@@ -1,0 +1,744 @@
+{
+  "teams": [
+    {
+      "team_name": "SSG 랜더스",
+      "short_name": "SSG",
+      "logo": "team/team-logos/ssg-landers.png",
+      "level": 1,
+      "stadium": {
+        "id": "ssg_1",
+        "name": "인천 SSG 랜더스필드",
+        "location": "인천광역시 미추홀구 매소홀로 618 (문학동)",
+        "sections": [
+          {
+            "section_name": "4층 SKY뷰석",
+            "price": {
+              "weekday": 11000,
+              "weekend": 13000
+            }
+          },
+          {
+            "section_name": "내야필드석",
+            "price": {
+              "weekday": 14000,
+              "weekend": 17000
+            }
+          },
+          {
+            "section_name": "외야필드석",
+            "price": {
+              "weekday": 13000,
+              "weekend": 16000
+            }
+          },
+          {
+            "section_name":"최정 400홈런 기념존",
+            "price" : 400
+          },
+          {
+            "section_name": "SKY탁자석",
+            "price": {
+              "weekday": 23000,
+              "weekend": 32000
+            }
+          },
+          {
+            "section_name": "미니스카이박스",
+            "price": {
+              "weekday": 63000,
+              "weekend": 80000
+            }
+          },
+          {
+            "section_name": "외야패밀리존",
+            "price": {
+              "weekday": 24000,
+              "weekend": 33000
+            }
+          },
+          {
+            "section_name": "이마트프렌들리존",
+            "price": {
+              "weekday": 31000,
+              "weekend": 37000
+            }
+          },
+          {
+            "section_name": "랜더스라이브존",
+            "price": {
+              "weekday": 56000,
+              "weekend": 69000
+            }
+          },
+          {
+            "section_name": "피코크테이블석(1층)",
+            "price": {
+              "weekday": 49000,
+              "weekend": 58000
+            }
+          },
+          {
+            "section_name": "노브랜드테이블석(2층)",
+            "price": {
+              "weekday": 43000,
+              "weekend": 49000
+            }
+          },
+          {
+            "section_name": "덕아웃상단석",
+            "price": {
+              "weekday": 19000,
+              "weekend": 23000
+            }
+          },
+          {
+            "section_name": "몰리스그린존",
+            "price": {
+              "weekday": 17000,
+              "weekend": 24000
+            }
+          },
+          {
+            "section_name": "으쓱이존",
+            "price": {
+              "weekday": 17000,
+              "weekend": 20000
+            }
+          },
+          {
+            "section_name": "원정응원석",
+            "price": {
+              "weekday": 17000,
+              "weekend": 20000
+            }
+          },
+          {
+            "section_name": "홈런커플존",
+            "price": {
+              "weekday": 29000,
+              "weekend": 37000
+            }
+          },
+          {
+            "section_name": "스카이박스",
+            "price": {
+              "weekday": 79000,
+              "weekend": 85000
+            }
+          },
+          {
+            "section_name": "오픈 바비큐존",
+            "price": {
+              "weekday": 34000,
+              "weekend": 44000
+            }
+          },
+          {
+            "section_name": "이마트바비큐존",
+            "price" : {
+              "weekday": 34000,
+              "weekend": 44000
+            }
+          },
+          {
+            "section_name": "요기요내야패밀리존",
+            "price": {
+              "weekday": 36000,
+              "weekend": 47000
+            }
+          },
+          {
+            "section_name": "초가정자",
+            "price": {
+              "weekday": 20000,
+              "weekend": 27000
+            }
+          },
+          {
+            "section_name": "로케트배터리외야파티덱",
+            "price": {
+              "weekday": 22000,
+              "weekend": 27000
+            }
+          }
+        ]
+      }
+    },{
+      "team_name": "두산 베어스",
+      "short_name": "두산",
+      "logo": "team/team-logos/doosan-bears.png",
+      "level": 1,
+      "stadium": {
+        "id": "doosan_1",
+        "name": "잠실야구장 (서울종합운동장 야구장)",
+        "location": "서울특별시 송파구 올림픽로 25",
+        "sections": [
+          {
+            "section_name": "중앙석",
+            "price": {"weekday": 80000, "weekend" : 80000}
+          },
+          {
+            "section_name": "테이블석",
+            "price": {
+              "weekday": 52000,
+              "weekend": 58000
+            }
+          },
+          {
+            "section_name": "익사이팅존",
+            "price": {
+              "weekday": 28000,
+              "weekend": 33000
+            }
+          },
+
+          {
+            "section_name": "블루지정석",
+            "price": {
+              "weekday": 22000,
+              "weekend": 24000
+            }
+          },
+          {
+            "section_name": "오렌지지정석(응원석)",
+            "price": {
+              "weekday": 20000,
+              "weekend": 22000
+            }
+          },
+          {
+            "section_name": "레드지정석",
+            "price": {
+              "weekday": 17000,
+              "weekend": 19000
+            }
+          },
+          {
+            "section_name": "네이비석",
+            "price": {
+              "weekday": 14000,
+              "weekend": 16000
+            }
+          },
+          {
+            "section_name": "외야지정석",
+            "price": {
+              "weekday": 9000,
+              "weekend": 10000
+            }
+          }
+        ]
+      }
+    },
+    {
+      "team_name": "키움 히어로즈",
+      "short_name": "키움",
+      "logo": "team/team-logos/kiwoom-heroes.png",
+      "level": 1,
+      "stadium": {
+        "id": "kiwoom_1",
+        "name": "고척스카이돔",
+        "location": "서울특별시 구로구 경인로 430 (고척동)",
+        "sections": [
+          {
+            "section_name": "R.d-club(로열 다이아몬드 클럽)",
+            "price": { "weekday": 60000, "weekend": 99000 },
+            "summer": { "weekday": 66000, "weekend": 108900 }
+          },
+          {
+            "section_name": "LEXUS 1층 테이블석",
+            "price": { "weekday": 55000, "weekend": 88000 },
+            "summer": { "weekday": 60500, "weekend": 96800 }
+          },
+          {
+            "section_name": "NAVER 2층 테이블석",
+            "price": { "weekday": 45000, "weekend": 72000 },
+            "summer": { "weekday": 49500, "weekend": 79200 }
+          },
+          {
+            "section_name": "내야 커플석",
+            "price": { "weekday": 33000, "weekend": 50000 },
+            "summer": { "weekday": 36300, "weekend": 55000 }
+          },
+          {
+            "section_name": "외야 커플석",
+            "price": { "weekday": 20000, "weekend": 30000 },
+            "summer": { "weekday": 22000, "weekend": 33000 }
+          },
+          {
+            "section_name": "다크버건디석",
+            "price": { "weekday": 20000, "weekend": 28000 },
+            "summer": { "weekday": 22000, "weekend": 30800 }
+          },
+          {
+            "section_name": "버건디석",
+            "price": { "weekday": 18000, "weekend": 25000 },
+            "summer": { "weekday": 19800, "weekend": 27500 }
+          },
+          {
+            "section_name": "3층 지정석",
+            "price": { "weekday": 14000, "weekend": 21000 },
+            "summer": { "weekday": 15400, "weekend": 23100 }
+          },
+          {
+            "section_name": "내야석",
+            "price": { "weekday": 9000,  "weekend": 13000 },
+            "summer": { "weekday": 9900,  "weekend": 14300 }
+          },
+          {
+            "section_name": "4층 지정석",
+            "price": { "weekday": 9000,  "weekend": 13000 },
+            "summer": { "weekday": 9900,  "weekend": 14300 }
+          },
+          {
+            "section_name": "외야 지정석",
+            "price": { "weekday": 9000,  "weekend": 13000 },
+            "summer": { "weekday": 9900,  "weekend": 14300 }
+          },
+          {
+            "section_name": "외야 패밀리석(4인석)",
+            "price": { "weekday": 88000,  "weekend": 120000},
+            "summer": { "weekday": 96800,  "weekend": 132000 }
+          },
+          {
+            "section_name": "외야 패밀리석(5인석)",
+            "price": { "weekday": 112000, "weekend": 150000},
+            "summer": { "weekday": 123200, "weekend": 165000 }
+          },
+          {
+            "section_name": "외야 유아동반석(2인석)",
+            "price": { "weekday": 44000,  "weekend": 60000 },
+            "summer": { "weekday": 48400,  "weekend": 66000 }
+          }
+        ]
+      }
+    },
+    {
+      "team_name": "KIA 타이거즈",
+      "short_name": "KIA",
+      "logo": "team/team-logos/kia-tigers.png",
+      "level": 1,
+      "stadium": {
+        "id": "kia_1",
+        "name": "광주-기아 챔피언스필드",
+        "location": "광주광역시 북구 서림로 10",
+        "sections": [
+          { "section_name": "K9",
+            "price": { "weekday": 16000, "weekend": 20000 }
+          },
+          { "section_name": "K8",
+            "price": { "weekday": 14000, "weekend": 18000 }
+          },
+          { "section_name": "K5",
+            "price": { "weekday": 12000, "weekend": 16000 }
+          },
+          { "section_name": "EV석",
+            "price": { "weekday": 10000, "weekend": 13000 }
+          },
+          { "section_name": "외야",
+            "price": { "weekday": 10000, "weekend": 13000 }
+          },
+          { "section_name": "스카이박스",
+            "price": { "weekday": 75000, "weekend": 85000 }
+          },
+          { "section_name": "챔피언석",
+            "price": { "weekday": 50000, "weekend": 60000 }
+          },
+          { "section_name": "중앙테이블석",
+            "price": { "weekday": 45000, "weekend": 55000 }
+          },
+          { "section_name": "메디힐테이블석",
+            "price": { "weekday": 30000, "weekend": 35000 }
+          },
+          { "section_name": "파티석(4층)",
+            "price": { "weekday": 25000, "weekend": 30000 }
+          },
+          { "section_name": "타이거즈가족석",
+            "price": { "weekday": 22000, "weekend": 27000 }
+          },
+          { "section_name": "스카이피크닉석",
+            "price": { "weekday": 20000, "weekend": 25000 }
+          },
+          { "section_name": "외야가족석",
+            "price": { "weekday": 20000, "weekend": 25000 }
+          },
+          { "section_name": "서프라이즈석",
+            "price": { "weekday": 25000, "weekend": 30000 }
+          },
+          { "section_name": "응원특별석",
+            "price": { "weekday": 15000, "weekend": 19000 }
+          },
+          { "section_name": "휠체어석",
+            "price": { "weekday": 4000, "weekend": 5000 }
+          },
+          { "section_name": "K9 중증장애인석",
+            "price": { "weekday": 4000, "weekend": 5000 }
+          }
+        ]
+      }
+    },
+    {
+      "team_name": "LG 트윈스",
+      "short_name": "LG",
+      "logo": "team/team-logos/lg-twins.png",
+      "level": 1,
+      "stadium": {
+        "id": "lg_1",
+        "name": "잠실야구장 (서울종합운동장 야구장)",
+        "location": "서울특별시 송파구 올림픽로 25",
+        "sections": [
+          {
+            "section_name": "프리미엄석",
+            "price": {"weekday": 90000, "weekend" : 90000}
+          },
+          {
+            "section_name": "테이블석",
+            "price": {
+              "weekday": 52000,
+              "weekend": 58000
+            }
+          },
+          {
+            "section_name": "익사이팅존",
+            "price": {
+              "weekday": 28000,
+              "weekend": 33000
+            }
+          },
+          {
+            "section_name": "블루지정석",
+            "price": {
+              "weekday": 22000,
+              "weekend": 24000
+            }
+          },
+          {
+            "section_name": "오렌지지정석(응원석)",
+            "price": {
+              "weekday": 20000,
+              "weekend": 22000
+            }
+          },
+          {
+            "section_name": "레드지정석",
+            "price": {
+              "weekday": 17000,
+              "weekend": 19000
+            }
+          },
+          {
+            "section_name": "네이비석",
+            "price": {
+              "weekday": 14000,
+              "weekend": 16000
+            }
+          },
+          {
+            "section_name": "그린",
+            "price": {
+              "weekday": 9000,
+              "weekend": 10000
+            }
+          }
+        ]
+      }
+    },
+    {
+      "team_name": "NC 다이노스",
+      "short_name": "NC",
+      "logo": "team/team-logos/nc-dinos.png",
+      "level": 1,
+      "stadium": {
+        "id": "nc_1",
+        "name": "창원NC파크 (마산야구센터 창원 NC파크 마산구장)",
+        "location": "경남 창원시 마산회원구 삼호로 63",
+        "sections": [
+          {
+            "section_name": "내야석",
+            "price": { "weekday": 14000, "weekend": 20000 }
+          },
+          {
+            "section_name": "테이블석",
+            "price": { "weekday": 35000, "weekend": 45000 }
+          },
+          {
+            "section_name": "라운드 테이블석",
+            "price": { "weekday": 38000, "weekend": 48000 }
+          },
+          {
+            "section_name": "외야석",
+            "price": { "weekday": 10000, "weekend": 13000 }
+          },
+          {
+            "section_name": "외야잔디석",
+            "price": { "weekday": 9000,  "weekend": 11000 }
+          },
+          {
+            "section_name": "3층 내야석",
+            "price": { "weekday": 9000,  "weekend": 13000 }
+          },
+          {
+            "section_name": "4층 내야석",
+            "price": { "weekday": 7000,  "weekend": 10000 }
+          },
+          {
+            "section_name": "ABL 프리미엄석",
+            "price": { "weekday": 45000, "weekend": 60000 }
+          },
+          {
+            "section_name": "ABL 프리미엄 테이블석",
+            "price": { "weekday": 55000, "weekend": 70000 }
+          }
+        ]
+      }
+    },
+    {
+      "team_name": "KT 위즈",
+      "short_name": "KT",
+      "logo": "team/team-logos/kt-wiz.png",
+      "level": 1,
+      "stadium": {
+        "id": "kt_1",
+        "name": "수원 KT위즈파크",
+        "location": "경기도 수원시 장안구 경수대로 893",
+        "sections": [
+          { "section_name": "중앙 포수 뒤 테이블석", "price": { "weekday": 60000, "weekend": 70000 } },
+          { "section_name": "중앙 테이블석",       "price": { "weekday": 50000, "weekend": 60000 } },
+          { "section_name": "중앙지정석",         "price": { "weekday": 18000, "weekend": 22000 } },
+          { "section_name": "내야 테이블석",       "price": { "weekday": 40000, "weekend": 50000 } },
+
+          { "section_name": "익사이팅석",         "price": { "weekday": 25000, "weekend": 30000 } },
+          { "section_name": "응원지정석(내야 1,3루)", "price": { "weekday": 18000, "weekend": 22000 } },
+
+          { "section_name": "휠체어석(장애인)",     "price": { "weekday": 9000,  "weekend": 11000 } },
+
+          { "section_name": "스카이존(5F)",        "price": { "weekday": 10000, "weekend": 12000 } },
+
+          { "section_name": "외야 테이블석(1,3루)", "price": { "weekday": 25000, "weekend": 30000 } },
+          { "section_name": "캠핑존",             "price": { "weekday": 160000, "weekend": 200000 } },
+          { "section_name": "외야 잔디 자유석",     "price": { "weekday": 11000, "weekend": 13000 } },
+
+          { "section_name": "스카이박스 6인실",   "price": { "weekday": 420000, "weekend": 420000 } },
+          { "section_name": "스카이박스 8인실",   "price": { "weekday": 560000, "weekend": 560000 } },
+          { "section_name": "스카이박스 10인실",  "price": { "weekday": 700000, "weekend": 700000 } },
+          { "section_name": "스카이박스 12인실",  "price": { "weekday": 840000, "weekend": 840000 } },
+          { "section_name": "스카이박스 20인실",  "price": { "weekday": 1400000, "weekend": 1400000 } },
+          { "section_name": "스카이박스 24인실",  "price": { "weekday": 1680000, "weekend": 1680000 } }
+        ]
+      }
+    },
+    {
+      "team_name": "삼성 라이온즈",
+      "short_name": "삼성",
+      "logo": "team/team-logos/samsung-lions.png",
+      "level": 1,
+      "stadium": {
+        "id": "samsung_1",
+        "name": "대구 삼성라이온즈 파크",
+        "location": "대구광역시 수성구 야구전설로 1",
+        "sections": [
+          { "section_name": "VIP석", "price": { "weekday": 45000, "weekend": 55000 } },
+          { "section_name": "으뜸병원 중앙테이블석", "price": { "weekday": 40000, "weekend": 50000 } },
+          { "section_name": "이수그룹 3루 테이블석", "price": { "weekday": 35000, "weekend": 45000 } },
+          { "section_name": "이수페타시스 1루 테이블석", "price": { "weekday": 35000, "weekend": 45000 } },
+          { "section_name": "1,3루 익사이팅석", "price": { "weekday": 22000, "weekend": 27000 } },
+          { "section_name": "블루존", "price": { "weekday": 17000, "weekend": 19000 } },
+          { "section_name": "3루 내야지정석", "price": { "weekday": 15000, "weekend": 17000 } },
+          { "section_name": "원정응원석", "price": { "weekday": 17000, "weekend": 19000 } },
+          { "section_name": "1루 내야지정석", "price": { "weekday": 10000, "weekend": 13000 } },
+          { "section_name": "SKY 요기보 패밀리존(4인)", "price": { "weekday": 120000, "weekend": 160000 }, "note": "4인" },
+          { "section_name": "SKY 하단지정석", "price": { "weekday": 10000, "weekend": 11000 } },
+          { "section_name": "1,3루 SKY 상단지정석", "price": { "weekday": 8000, "weekend": 9000 } },
+          { "section_name": "중앙 SKY 상단지정석", "price": { "weekday": 9000, "weekend": 10000 } },
+          { "section_name": "외야지정석", "price": { "weekday": 9000, "weekend": 10000 } },
+          { "section_name": "외야패밀리석", "price": { "weekday": 18000, "weekend": 20000 }, "note": "1인 요금" },
+          { "section_name": "외야테이블석(4인)", "price": { "weekday": 72000, "weekend": 80000 }, "note": "4인" },
+          { "section_name": "외야커플테이블석(2인)", "price": { "weekday": 30000, "weekend": 36000 }, "note": "2인" },
+          { "section_name": "루프탑 테이블석", "price": { "weekday": 20000, "weekend": 23000 } },
+          { "section_name": "파티플로어 라이브석", "price": { "weekday": 60000, "weekend": 60000 } },
+          { "section_name": "잔디그린존", "price": { "weekday": 10000, "weekend": 11000 } },
+          { "section_name": "캠핑존(6인)", "price": { "weekday": 150000, "weekend": 210000 }, "note": "6인" },
+          { "section_name": "휠체어 장애인석", "price": { "weekday": 5000, "weekend": 5000 } }
+        ]
+      }
+    },
+    {
+      "team_name": "한화 이글스",
+      "short_name": "한화",
+      "logo": "team/team-logos/hanwha-eagles.png",
+      "level": 1,
+      "stadium": {
+        "id": "hanwha_1",
+        "name": "대전 한화생명이글스파크",
+        "location": "대전광역시 중구 대종로 373",
+        "sections": [
+          { "section_name": "포수후면석",         "price": { "g1": 50000,  "g2": 55000,  "g3": 67500,  "g4": 77500,  "special": 82000 } },
+          { "section_name": "중앙지정석",         "price": { "g1": 42000,  "g2": 42000,  "g3": 45500,  "g4": 51500,  "special": 55000 } },
+          { "section_name": "중앙탁자석",         "price": { "g1": 45000,  "g2": 45000,  "g3": 49000,  "g4": 56000,  "special": 59000 } },
+          { "section_name": "중앙휠체어석",       "price": { "g1": 21000,  "g2": 21000,  "g3": 22800,  "g4": 25800,  "special": 27500 }},
+
+          { "section_name": "내야지정석A",       "price": { "g1": 16000,  "g2": 16000,  "g3": 19500,  "g4": 23000,  "special": 25500 } },
+          { "section_name": "카스존(응원단석)",   "price": { "g1": 17500,  "g2": 17500,  "g3": 22500,  "g4": 26000,  "special": 29000 } },
+          { "section_name": "내야지정석B",       "price": { "g1": 14000,  "g2": 15500,  "g3": 17000,  "g4": 19500,  "special": 21500 } },
+          { "section_name": "내야탁자석(4층)",    "price": { "g1": 24500,  "g2": 24500,  "g3": 32000,  "g4": 36000,  "special": 40000 } },
+          { "section_name": "내야휠체어석",       "price": { "g1": 8000,   "g2": 8000,   "g3": 9800,   "g4": 11500,  "special": 12800 }},
+
+          { "section_name": "이닝스 VIP 바 & 룸", "price": { "g1": 100500, "g2": 100500, "g3": 106500, "g4": 111500, "special": 114000 } },
+          { "section_name": "이닝스 VIP 테라스",  "price": { "g1": 80500,  "g2": 80500,  "g3": 86500,  "g4": 91500,  "special": 94000 } },
+          { "section_name": "스플래쉬 자쿠지",    "price": { "g1": 44000,  "g2": 45500,  "g3": 47000,  "g4": 49500,  "special": 51500 } },
+          { "section_name": "스플래쉬 카라반",    "price": { "g1": 54500,  "g2": 54500,  "g3": 62000,  "g4": 66000,  "special": 70000 } },
+
+          { "section_name": "외야지정석",         "price": { "g1": 10500,  "g2": 11500,  "g3": 13000,  "g4": 14500,  "special": 16000 } },
+          { "section_name": "밤켈존(잔디석)",     "price": { "g1": 17000,  "g2": 17000,  "g3": 20500,  "g4": 23500,  "special": 26000 } },
+          { "section_name": "외야탁자석",         "price": { "g1": 27500,  "g2": 27500,  "g3": 34500,  "g4": 39000,  "special": 42500 } },
+          { "section_name": "외야휠체어석",       "price": { "g1": 5300,   "g2": 5800,   "g3": 6500,   "g4": 7300,   "special": 8000 } },
+          { "section_name": "스카이박스(인당)",   "price": { "g1": 95000,  "g2": 95000,  "g3": 100000, "g4": 110500, "special": 116000 } }
+        ]
+      }
+    },
+    {
+      "team_name": "롯데 자이언츠",
+      "short_name": "롯데",
+      "logo": "team/team-logos/lotte-giants.png",
+      "level": 1,
+      "stadium": {
+        "id": "lotte_1",
+        "name": "사직야구장",
+        "location": "부산광역시 동래구 사직로 45",
+        "sections": [
+          { "section_name": "그라운드석",                 "price": { "weekday": 120000, "weekend": 150000 } },
+          { "section_name": "그라운드석(시야방해)",        "price": { "weekday": 84000,  "weekend": 105000 } },
+          { "section_name": "중앙탁자석",                 "price": { "weekday": 40000,  "weekend": 55000 } },
+          { "section_name": "응원/와이드 탁자석",         "price": { "weekday": 30000,  "weekend": 45000 } },
+          { "section_name": "1/3루 내야탁자석",           "price": { "weekday": 25000,  "weekend": 35000 } },
+          { "section_name": "3루 단체석",                 "price": { "weekday": 25000,  "weekend": 30000 } },
+          { "section_name": "3루 단체석(시야방해)",        "price": { "weekday": 17500,  "weekend": 21000 } },
+          { "section_name": "로케트배터리존",             "price": { "weekday": 30000,  "weekend": 40000 } },
+          { "section_name": "외야탁자석(롯데이노베이트슨)","price": { "weekday": 30000,  "weekend": 35000 } },
+          { "section_name": "1루 내야필드석",             "price": { "weekday": 15000,  "weekend": 20000 } },
+          { "section_name": "3루 내야필드석A",            "price": { "weekday": 15000,  "weekend": 20000 } },
+          { "section_name": "3루 내야필드석B",            "price": { "weekday": 15000,  "weekend": 20000 } },
+          { "section_name": "1루 내야상단석",             "price": { "weekday": 13000,  "weekend": 17000 } },
+          { "section_name": "3루 내야상단석A",            "price": { "weekday": 13000,  "weekend": 17000 } },
+          { "section_name": "3루 내야상단석B",            "price": { "weekday": 13000,  "weekend": 17000 } },
+          { "section_name": "중앙상단석",                 "price": { "weekday": 10000,  "weekend": 12000 } },
+          { "section_name": "1루 외야석",                 "price": { "weekday": 8000,   "weekend": 10000 } },
+          { "section_name": "3루 외야석",                 "price": { "weekday": 8000,   "weekend": 10000 } },
+          { "section_name": "휠체어석/동반석",            "price": { "weekday": 4000,   "weekend": 5000 } }
+        ]
+      }
+    },
+    {
+      "team_name":"SSG",
+      "logo": "team/team-logos/ssg-landers.png",
+      "level": 2,
+      "league": "북부",
+      "stadium": {
+        "id": "ssg_2",
+        "name": "강화 SSG 퓨처스필드",
+        "location": "인천광역시 강화군 길상면 길상로 242-30 (온수리)"
+      }
+    },
+    {
+      "team_name":"한화",
+      "logo": "team/team-logos/hanwha-eagles.png",
+      "level": 2,
+      "league": "북부",
+      "stadium": {
+        "id": "hanwha_2",
+        "name": "한화이글스 서산전용연습구장",
+        "location": "충청남도 서산시 성연면 왕정리 477-3"
+      }
+    },{
+      "team_name":"LG",
+      "logo": "team/team-logos/lg-twins.png",
+      "level": 2,
+      "league": "북부",
+      "stadium": {
+        "id": "lg_2",
+        "name": "LG 챔피언스 파크",
+        "location": "경기도 이천시 대월면 부필리 393"
+      }
+    },{
+      "team_name":"두산",
+      "logo": "team/team-logos/doosan-bears.png",
+      "level": 2,
+      "league": "북부",
+      "stadium": {
+        "id": "doosan_2",
+        "name": "두산 베어스파크",
+        "location": "경기도 이천시 백사면 경사리두산베어스파크"
+      }
+    },{
+      "team_name":"고양",
+      "logo": "team/team-logos/kiwoom-heroes.png",
+      "level": 2,
+      "league": "북부",
+      "stadium": {
+        "id": "kiwoom_2",
+        "name": " 고양 국가대표 야구훈련장",
+        "location": "경기 고양시 일산서구 중앙로 1601"
+      }
+    },{
+      "team_name":"상무",
+      "logo": "team/team-logos/sangmoo.png",
+      "level": 2,
+      "league": "남부",
+      "stadium": {
+        "id": "sangmoo",
+        "name": "문경 상무 야구",
+        "location": "경상북도 문경시 호계면 견탄리 637"
+      }
+    },{
+      "team_name":"KT",
+      "logo": "team/team-logos/kt-wiz.png",
+      "level": 2,
+      "league": "남부",
+      "stadium": {
+        "id": "kt_2",
+        "name": "강화 SSG 퓨처스필드",
+        "location": "인천광역시 강화군 길상면 길상로 242-30 (온수리)"
+      }
+    },{
+      "team_name":"NC",
+      "logo": "team/team-logos/nc-dinos.png",
+      "level": 2,
+      "league": "남부",
+      "stadium": {
+        "id": "nc_2",
+        "name": "강화 SSG 퓨처스필드",
+        "location": "인천광역시 강화군 길상면 길상로 242-30 (온수리)"
+      }
+    },{
+      "team_name":"롯데",
+      "logo": "team/team-logos/lotte-giants.png",
+      "level": 2,
+      "league": "남부",
+      "stadium": {
+        "id": "lotte_2",
+        "name": "상동야구",
+        "location": "경상남도 김해시 상동면 장척로 678"
+      }
+    },{
+      "team_name":"삼성",
+      "logo": "team/team-logos/samsung-lions.png",
+      "level": 2,
+      "league": "남부",
+      "stadium": {
+        "id": "samsung_2",
+        "name": "삼성라이온즈 경산볼파",
+        "location": "경상북도 경산시 진량읍 일연로 640"
+      }
+    },{
+      "team_name":"KIA",
+      "logo": "team/team-logos/kia-tigers.png",
+      "level": 2,
+      "league": "남부",
+      "stadium": {
+        "id": "kia_2",
+        "name": "기아 챌린저스 필드",
+        "location": "전라남도 함평군 학교면 대곡길 88-41"
+      }
+    }
+  ]
+}
