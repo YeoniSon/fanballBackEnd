@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
 @Slf4j
-public class ExceptionController {
+public class UserExceptionController {
 
     @ExceptionHandler({
             UserException.class

@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import java.util.Locale;
 
 
-@Entity(name = "USER")
+@Entity(name = "user")
 @Getter
 @Setter
 @Builder
